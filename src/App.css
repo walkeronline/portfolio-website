@@ -10,6 +10,10 @@ html {
 	height: 100%;
 }
 
+#root {
+	background-image: linear-gradient(#374036, #212520);
+}
+
 .custom-shape-divider-top-1670686959 {
 	position: absolute;
 	top: 0;
@@ -60,5 +64,37 @@ html {
 
 	to {
 		opacity: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.main-container {
+		display: flex;
+		flex-direction: column;
+		width: 370px;
+		left: 50%;
+		margin-left: -100px;
+		/* background-color: red; */
+		height: 100%;
+	}
+	html {
+		background-image: none;
+		background-color: #374036;
+	}
+	.custom-shape-divider-top-1670686959 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 150%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.custom-shape-divider-top-1670686959 svg {
+		position: relative;
+		display: block;
+		width: calc(150% + 1.3px);
+		height: 100px;
+		animation: wave-in 1s ease-in-out;
 	}
 }

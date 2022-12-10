@@ -163,3 +163,19 @@ a {
 		background: transparent;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.about-container {
+		width: 370px;
+		height: fit-content;
+	}
+	.header-container {
+		display: flex;
+		flex-direction: column;
+		width: 370px;
+	}
+	.about-me {
+		overflow-y: scroll;
+		max-height: 533px;
+	}
+}
