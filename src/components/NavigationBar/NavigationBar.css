@@ -1,0 +1,50 @@
+.button-container {
+	overflow: visible;
+	display: flex;
+	width: 150px;
+	height: 700px;
+	justify-content: start;
+	align-items: flex-start;
+	flex-direction: column;
+	/* padding-top: 75px; */
+	/* padding-left: 50px; */
+}
+
+.home-button {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	width: fit-content;
+	height: fit-content;
+	text-align: center;
+	padding: 10px 10px;
+	/* margin: 0px 25px; */
+	margin-right: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	overflow: visible;
+	font-weight: bold;
+
+	/* margin-top: 20px; */
+}
+
+.home-button.active {
+	color: #fad6a5;
+	/* padding */
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.home-button.active::before {
+	content: '|';
+	animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}

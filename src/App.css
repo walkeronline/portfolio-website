@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+* {
+	/* background-color: #1a1826; */
+	color: #eaeaea;
+	overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-shape-divider-top-1670686959 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-shape-divider-top-1670686959 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 100px;
+	animation: wave-in 1s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-shape-divider-top-1670686959 .shape-fill {
+	fill: #2b312a;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container {
+	position: absolute;
+	width: fit-content;
+	height: fit-content;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -275px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes wave-in {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 100px;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0%;
+	}
+
+	to {
+		opacity: 100%;
+	}
 }

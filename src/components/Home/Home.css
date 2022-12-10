@@ -1,0 +1,145 @@
+html {
+	background-image: linear-gradient(#374036, #212520);
+	height: 100%;
+}
+
+* {
+	/* background-color: #374036; */
+	color: #a8bbbf;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#root {
+	background-color: red;
+}
+
+.about-container {
+	/* position: absolute; */
+	width: 500px;
+	height: 560px;
+	/* left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -280px; */
+	display: flex;
+	flex-direction: column;
+	animation: fade-in 0.25s forwards ease-in-out;
+	/* animation: slide-down 1s forwards ease-in-out; */
+}
+
+.about-container h1,
+.about-container h2 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+
+.about-container h1 {
+	font-size: 2em;
+	position: relative;
+	/* animation: slide-in-left 1s forwards ease-in-out;
+	left: -10px; */
+}
+
+.about-container h2 {
+	display: flex;
+	font-size: 2.5em;
+	position: relative;
+	/* animation: slide-in-left 1.5s forwards ease-in-out;
+	left: -15px; */
+	flex-direction: row;
+}
+.about-container h2 > * {
+	padding-left: 0.25em;
+}
+
+.name-highlight {
+	color: #fad6a5;
+}
+
+.about-container p {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1em;
+	text-align: left;
+	position: relative;
+	/* animation: slide-in-left 2s forwards ease-in-out;
+	left: -20px; */
+	margin: 10px 0px 20px 0px;
+}
+
+.about-container br {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* .about-me {
+	margin-bottom: 20px;
+} */
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: space-between; */
+	margin: 0;
+	padding: 0;
+	width: fit-content;
+	height: fit-content;
+}
+
+.header {
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.header-pic {
+	border-radius: 100%;
+	border: #fad6a5 2px solid;
+	width: 5em;
+	height: 5em;
+	margin: 2px;
+	/* background-color: #FAD6A5; */
+}
+
+a {
+	color: #fff;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+
+@keyframes slide-in-left {
+	from {
+		opacity: 0%;
+	}
+	to {
+		left: 0;
+		opacity: 100%;
+	}
+}
+
+@keyframes slide-down {
+	from {
+		opacity: 0%;
+		background-color: transparent;
+		background: transparent;
+	}
+	to {
+		opacity: 100%;
+		top: 50%;
+		background-color: transparent;
+		background: transparent;
+	}
+}
