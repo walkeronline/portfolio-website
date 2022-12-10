@@ -172,10 +172,25 @@ a {
 	.header-container {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		width: 370px;
 	}
 	.about-me {
 		overflow-y: scroll;
 		max-height: 533px;
+	}
+	.header {
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		margin-left: 0px;
+		padding: 0px;
+		/* justify-content: space-evenly; */
+	}
+	.header > h2 {
+		/* justify-content: flex-end;
+		align-items: flex-end; */
+		font-size: 2em;
 	}
 }

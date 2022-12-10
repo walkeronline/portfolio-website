@@ -72,8 +72,9 @@ html {
 		display: flex;
 		flex-direction: column;
 		width: 370px;
-		left: 50%;
+		left: 29%;
 		margin-left: -100px;
+		top: 32%;
 		/* background-color: red; */
 		height: 100%;
 	}
@@ -94,7 +95,7 @@ html {
 		position: relative;
 		display: block;
 		width: calc(150% + 1.3px);
-		height: 100px;
+		height: 0px;
 		animation: wave-in 1s ease-in-out;
 	}
 }
