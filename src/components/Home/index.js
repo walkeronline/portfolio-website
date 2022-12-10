@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import './Home.css';
-
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NavigationBar from '../NavigationBar';
 
 function Home() {
@@ -18,6 +18,24 @@ function Home() {
 						<h2>
 							I'm <div className="name-highlight">Walker</div>.
 						</h2>
+					</div>
+					<div className="social-icons">
+						<a
+							className="icon-wrapper"
+							href="https://github.com/walkerwilliamsx"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fa-brands fa-github"></i>
+						</a>
+						<a
+							className="icon-wrapper"
+							href="https://www.linkedin.com/in/walker-williams-463bb021b/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fa-brands fa-linkedin"></i>
+						</a>
 					</div>
 				</div>
 				<div className="about-me">

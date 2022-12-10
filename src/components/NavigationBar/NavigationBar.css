@@ -3,11 +3,14 @@
 	display: flex;
 	width: 150px;
 	height: 700px;
-	justify-content: start;
+	justify-content: flex-start;
 	align-items: flex-start;
+	align-self: flex-end;
 	flex-direction: column;
+	text-align: start;
 	/* padding-top: 75px; */
 	/* padding-left: 50px; */
+	min-width: 150px;
 }
 
 .home-button {
@@ -15,7 +18,7 @@
 		'Lucida Sans', Arial, sans-serif;
 	width: fit-content;
 	height: fit-content;
-	text-align: center;
+	/* text-align: center; */
 	padding: 10px 10px;
 	/* margin: 0px 25px; */
 	margin-right: 10px;
@@ -24,6 +27,7 @@
 	text-decoration: none;
 	overflow: visible;
 	font-weight: bold;
+	text-align: start;
 
 	/* margin-top: 20px; */
 }
@@ -36,7 +40,7 @@
 }
 
 .home-button.active::before {
-	content: '|';
+	content: '. ';
 	animation: fade 0.5s ease-in-out;
 }
 

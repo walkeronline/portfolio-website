@@ -1,0 +1,60 @@
+.form-control {
+	display: flex;
+	flex-direction: column;
+}
+
+.name-email-control {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.name-email-control .name-form {
+	margin-bottom: 10px;
+	width: 49%;
+}
+
+.email {
+	width: 49%;
+}
+
+.contact-container {
+	width: 500px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	animation: fade-in 0.25s forwards ease-in-out;
+}
+
+.contact-container label {
+	margin-bottom: 4px;
+}
+
+.contact-container input,
+.contact-container textarea,
+.contact-container input:focus,
+.contact-container textarea:focus {
+	border-radius: 10px;
+	border: none;
+	stroke: none;
+	padding: 10px;
+	border-style: none;
+	border-color: transparent;
+	outline: 0px;
+	resize: none;
+	color: black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-container textarea {
+	overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+	background-color: transparent;
+	width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #61764b;
+	border-radius: 10px;
+}

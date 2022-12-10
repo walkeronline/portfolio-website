@@ -15,28 +15,28 @@ function NavigationBar() {
 				className={`home-button${page === 'home' ? ' active' : ''}`}
 				onClick={() => setPage('home')}
 			>
-				About
+				about
 			</Link>
 			<Link
 				to="/portfolio"
 				className={`home-button${page === 'portfolio' ? ' active' : ''}`}
 				onClick={() => setPage('portfolio')}
 			>
-				Portfolio
+				portfolio
 			</Link>
 			<Link
 				to="/resume"
 				className={`home-button${page === 'resume' ? ' active' : ''}`}
 				onClick={() => setPage('resume')}
 			>
-				Resume
+				resume
 			</Link>
 			<Link
 				to="/contact"
 				className={`home-button${page === 'contact' ? ' active' : ''}`}
 				onClick={() => setPage('contact')}
 			>
-				Contact
+				contact
 			</Link>
 		</div>
 	);

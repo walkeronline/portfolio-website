@@ -6,8 +6,8 @@
 }
 
 .grid-item {
-	width: 270px;
-	height: 270px;
+	width: 225px;
+	height: 225px;
 	background-color: #323859;
 	border-radius: 20px;
 	margin: 10px;
@@ -15,8 +15,16 @@
 	text-align: center;
 	justify-content: center;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 2.5em;
+	font-size: 2em;
 	cursor: pointer;
+	font-weight: bolder;
+	scale: 100%;
+	transition: scale 0.15s ease-out;
+}
+
+.grid-item:hover {
+	scale: 105%;
+	transition: scale 0.15s ease-in;
 }
 
 .grid-text {
@@ -49,14 +57,9 @@
 }
 
 .grid-container {
-	/* position: absolute; */
-	max-width: 700px;
-	min-width: fit-content;
-	height: fit-content;
-	/* left: 50%;
-	top: 50%;
-	margin-left: -290px;
-	margin-top: -290px; */
+	max-width: 500px;
+	height: 560px;
+
 	animation: fade-in 0.25s forwards ease-in-out;
 	overflow: hidden;
 }
@@ -64,13 +67,6 @@
 .grid-container * {
 	overflow: hidden;
 }
-
-/* .hero-icon {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	top: 50%;
-} */
 
 .hero-arrow {
 	width: 20px;
@@ -97,6 +93,15 @@
 	flex-direction: column;
 	overflow: hidden;
 	animation: explode 0.25s forwards ease-in-out;
+}
+
+@keyframes get-big {
+	from {
+		scale: 100%;
+	}
+	to {
+		scale: 105%;
+	}
 }
 
 @keyframes explode {

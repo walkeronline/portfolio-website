@@ -1,8 +1,3 @@
-html {
-	background-image: linear-gradient(#374036, #212520);
-	height: 100%;
-}
-
 * {
 	/* background-color: #374036; */
 	color: #a8bbbf;
@@ -29,6 +24,27 @@ body {
 	flex-direction: column;
 	animation: fade-in 0.25s forwards ease-in-out;
 	/* animation: slide-down 1s forwards ease-in-out; */
+}
+
+.social-icons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.icon-wrapper {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+i.fa-brands {
+	color: #fad6a5;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
 }
 
 .about-container h1,
@@ -82,13 +98,16 @@ body {
 } */
 
 .header-container {
-	display: flex;
-	flex-direction: row;
+	/* display: flex;
+	flex-direction: row; */
 	/* justify-content: space-between; */
 	margin: 0;
 	padding: 0;
-	width: fit-content;
+	width: 100%;
 	height: fit-content;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 18% 62% 20%;
 }
 
 .header {
@@ -96,6 +115,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	width: 70%;
 }
 
 .header-pic {

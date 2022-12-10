@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import NavigationBar from './components/NavigationBar';
 import { useState } from 'react';
+import Contact from './components/Contact';
 
 function App() {
 	const [currentPage, setCurrentPage] = useState('');
@@ -39,6 +40,7 @@ function App() {
 					<Routes>
 						<Route exact path="/" element={<Home />}></Route>
 						<Route exact path="/portfolio" element={<Portfolio />}></Route>
+						<Route exact path="/contact" element={<Contact />}></Route>
 					</Routes>
 				</Router>
 			</div>
